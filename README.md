@@ -7,7 +7,7 @@ Implementation of JWT using https://github.com/web-token libraries
 
 This project has a structure based on DDD and hexagonal architecture.
 
-If your application has a dependency injection system you can use the interface ```Abuenosvinos\Domain\Adapter\Jwt\JwtAdapter``` (Port) and populate the implementation with the classes in ```Abuenosvinos\Infrasctructure\Jwt``` (Adapter).
+If your application has a dependency injection system you can use the interface ```Abuenosvinos\Domain\Adapter\Jwt\JwtAdapter``` (Port) and populate the implementation with the classes in ```Abuenosvinos\Infrastructure\Jwt``` (Adapter).
 
 If not, you can see how to use it in the ```Abuenosvinos\Tests\Shared\Infrastructure\Jwt\JwtTest``` class.
 

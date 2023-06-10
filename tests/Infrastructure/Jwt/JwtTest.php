@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Abuenosvinos\Tests\Shared\Infrastructure\Jwt;
 
 use Abuenosvinos\Domain\Adapter\Jwt\JwtDecryptException;
-use Abuenosvinos\Infrasctructure\Jwt\Decrypt;
-use Abuenosvinos\Infrasctructure\Jwt\Encrypt;
-use Abuenosvinos\Infrasctructure\Jwt\JwtAdapter;
+use Abuenosvinos\Infrastructure\Jwt\Decrypt;
+use Abuenosvinos\Infrastructure\Jwt\Encrypt;
+use Abuenosvinos\Infrastructure\Jwt\JwtAdapter;
 use PHPUnit\Framework\TestCase;
 
 class JwtTest extends TestCase

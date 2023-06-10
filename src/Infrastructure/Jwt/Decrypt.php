@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Abuenosvinos\Infrasctructure\Jwt;
+namespace Abuenosvinos\Infrastructure\Jwt;
 
 use Abuenosvinos\Domain\Adapter\Jwt\JwtDecryptException;
 use Jose\Component\Core\AlgorithmManager;
