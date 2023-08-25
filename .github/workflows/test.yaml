@@ -1,0 +1,24 @@
+name: PHP Tests
+
+on: push
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    name: PHP Tests
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - uses: actions/cache@v1
+        with:
+          path: ~/.composer
+          key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-composer-
+
+      - name: Install Dependencies
+        run: docker run --rm -t -u $(id -u ${USER}):$(id -g ${USER}) -v $(pwd):/app composer:2 install
+
+      - name: Test
+        run: docker run --rm -t -u $(id -u ${USER}):$(id -g ${USER}) -v $(pwd):/app -w /app php:8.1 /app/vendor/bin/phpunit

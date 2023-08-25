@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Abuenosvinos\Tests\Shared\Infrastructure\Jwt;
+namespace Abuenosvinos\Tests\Infrastructure\Jwt;
 
 use Abuenosvinos\Domain\Adapter\Jwt\JwtDecryptException;
 use Abuenosvinos\Infrastructure\Jwt\Decrypt;
