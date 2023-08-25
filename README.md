@@ -13,8 +13,12 @@ If not, you can see how to use it in the ```Abuenosvinos\Tests\Infrastructure\Jw
 
 # Preparation
 
-```docker run --rm -u $(id -u ${USER}):$(id -g ${USER}) -v $(pwd):/app composer:2 install```
+```
+docker run --rm -u $(id -u ${USER}):$(id -g ${USER}) -v $(pwd):/app composer:2 install
+```
 
 # Test
 
-```docker run --rm -v $(pwd):/app php:8.1 /app/vendor/bin/phpunit /app/tests```
+```
+docker run --rm -v $(pwd):/app php:8.1 /app/vendor/bin/phpunit /app/tests
+```
